@@ -1,0 +1,93 @@
+.nav {
+  display: flex;
+  padding: 10px 10px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+.nav img {
+  margin: 0 20px;
+  height: 100%;
+}
+.navEnd {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: 10px;
+  align-items: center;
+  width: 30%;
+}
+
+.navEnd input {
+  width: 50%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+.navEnd input::placeholder {
+  padding: 10px;
+  font-size: 1rem;
+  color: rgb(181, 172, 172);
+}
+.myBoard {
+  padding: 30px 40px;
+}
+
+.boardsRow {
+  display: flex;
+  gap: 25px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.boardCard {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  height: 70px;
+  position: relative;
+  width: 23%;
+  cursor: pointer;
+}
+.boardCard:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.colorBox {
+  width: 70px;
+  min-width: 70px;
+  height: 100%;
+}
+.boardContent {
+  padding: 10px 20px;
+  font-size: 16px;
+  gap: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dots {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .boardsRow {
+    flex-direction: column;
+  }
+  .boardCard {
+    width: 80%;
+  }
+  .navEnd {
+    flex-direction: column;
+  }
+  .navEnd input {
+    width: 100%;
+  }
+}

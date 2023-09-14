@@ -1,0 +1,45 @@
+.inputDiv {
+  margin: 20px 0 40px;
+}
+.inputDiv input {
+  width: 90%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+.inputDiv input::placeholder {
+  font-size: 1rem;
+  color: rgb(181, 172, 172);
+}
+.inputDiv p {
+  color: red;
+  padding: 5px;
+  font-size: 14px;
+}
+.colorCircle {
+  transition: all 0.3s ease-out;
+}
+.colorCircle:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+}
+
+.button {
+  background-color: #e33653;
+  color: white;
+  padding: 13px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease-out;
+  float: right;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 16px #e33653;
+  text-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
+  transition: all 0.3s ease-out;
+}
